@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <script src="jquery-3.3.1.min.js">
+  </script>
+  <script>
+   $(document).ready(function(){
+    $("#b1").click(function(){
+	if($(this).html()=="Activate Script")
+	{
+	$(this).html("ON");
+	}
+     if($(this).html()=="ON")
+	 {
+	  $(this).html("OFF");
+	  $("#off").hide();
+	  $("#on").show();
+	  
+	 }
+	 else
+	 {
+	  $(this).html("ON");
+	  $("#on").hide();
+	  $("#off").show();
+	 }
+	});
+   });
+  </script>
+  <style>
+   #on{
+    display:none;
+   }
+  </style>
+ </head>
+ <body>
+ <center>
+  <button id="b1">  Activate Script  </button><br>
+  <img src="on.jpg" id = "on" style = "width:300px"/>
+  <img src="off.jpg" id = "off" style = "width:300px"/>
+  
+ </center>
+ </body>
+</html>

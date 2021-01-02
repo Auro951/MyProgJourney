@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>javascriptuse</title>
+<script>
+function f1()
+{
+var x =document.getElementById("uname").value;
+var y = document.getElementById("pword").value;
+if (x == "")
+{
+alert("please enter username");
+return false;
+}
+else if(y == "")
+{
+alert("enter password correctly");
+return false;
+}
+return true;
+}
+</script>
+</head>
+<body>
+<center>
+<h1>login</h1><br><br>
+<form onsubmit = "return f1()">
+username : <input type = "text" Id = "uname" placeholder = "enter your username"><br><br>
+Password: <input type = "password" id = "pword" placeholder = "enter your password"><br><br>
+<input type ="submit" value = "Login">
+</form>
+</center>
+</body>
+</html>
