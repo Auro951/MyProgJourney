@@ -1,0 +1,12 @@
+<html>
+<head>
+<style>
+body{
+
+background-image:url(. /image(2))
+}
+</style>
+</head>
+<body>
+</body>
+</html>
